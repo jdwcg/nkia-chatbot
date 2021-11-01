@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="style.css">
+
+	<title>Nkia</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header><img src="imgs/NKIA logo.png" alt=""></header>
+		<section class="chat-history">
+			<p class="interval"></p>
+			<h1 id="before-talk">이전 대화 보기 &and;</h1>
+			<h1>2020.12.14 (월)</h1>
+			<p class="interval"></p>
+			<p class="interval"></p>
+			<div class="logo-bw"><img src="imgs/NKIA logo_bw_blackbg.png" alt="logo"></div>
+			<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eos, culpa nostrum</h2>
+			<h3>Lorem ipsum</h3>
+			<div class="logo-bw logo-bw-bottom"><img src="imgs/NKIA logo_bw_blackbg.png" alt="logo"></div>
+			<h2 style="clear: both;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+			<h2>Lorem ipsum <img src="imgs/arrow-right.svg" alt=""></h2>
+		</section>
+		<form action="">
+			<div class="chat-area">
+
+				<div class="bottom">
+
+					<div class="chat-btns">
+
+						<img src="imgs/plus-icon.svg" alt="+">
+						<input type="text" placeholder="message...">
+						<a><img src="imgs/send-icon.svg" alt=""></a>
+					</div>
+
+				</div>
+				<div class="btn-arr">
+					<p class="btn-array btn-array-top">
+						<button>Lorem</button>
+						<button>ipsum</button>
+						<button>dolor</button>
+					</p>
+					<p class="btn-array">
+						<button>sit</button>
+						<button>amet</button>
+						<button>consectetur</button>
+					</p>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</body>
+<script>
+	$(function () {
+		$('.chat-btns > img').click(function () {
+			$('.btn-arr').slideToggle();
+		});
+		$('.chat-btns > img').click(function () {
+			$(this).toggleClass('open');
+		});
+	});
+</script>
+
+</html>
+
